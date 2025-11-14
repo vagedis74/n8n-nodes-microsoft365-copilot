@@ -1,0 +1,63 @@
+{
+  "name": "n8n-nodes-microsoft365-copilot",
+  "version": "1.0.0",
+  "description": "n8n community node for Microsoft 365 Copilot chat functionality",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n-node",
+    "microsoft365",
+    "copilot",
+    "ai",
+    "chat"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yourusername/n8n-nodes-microsoft365-copilot",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/n8n-nodes-microsoft365-copilot.git"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && npm run copy-icons",
+    "copy-icons": "mkdir -p dist/icons && cp icons/* dist/icons/",
+    "dev": "npm run build && n8n start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write ."
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/Microsoft365CopilotOAuth2Api.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Microsoft365Copilot/Microsoft365Copilot.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.0",
+    "n8n": "^1.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.5.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "n8n-nodes-microsoft365-copilot": "file:n8n-nodes-microsoft365-copilot-1.0.0.tgz"
+  }
+}
