@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-microsoft365-copilot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "n8n community node for Microsoft 365 Copilot chat functionality",
   "keywords": [
     "n8n-community-node-package",
@@ -57,7 +57,5 @@
   "peerDependencies": {
     "n8n-workflow": "*"
   },
-  "dependencies": {
-    "n8n-nodes-microsoft365-copilot": "file:n8n-nodes-microsoft365-copilot-1.0.0.tgz"
-  }
+  "dependencies": {}
 }
