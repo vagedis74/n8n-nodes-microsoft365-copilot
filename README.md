@@ -42,7 +42,7 @@ npm install n8n-nodes-microsoft365-copilot
 For development:
 
 ```bash
-git clone https://github.com/yourusername/n8n-nodes-microsoft365-copilot.git
+git clone https://github.com/vagedis74/n8n-nodes-microsoft365-copilot.git
 cd n8n-nodes-microsoft365-copilot
 npm install
 npm run build
@@ -250,7 +250,7 @@ npm run lint:fix
 
 ## Support
 
-For issues, questions, or contributions, please visit the [GitHub repository](https://github.com/yourusername/n8n-nodes-microsoft365-copilot).
+For issues, questions, or contributions, please visit the [GitHub repository](https://github.com/vagedis74/n8n-nodes-microsoft365-copilot).
 
 ## License
 

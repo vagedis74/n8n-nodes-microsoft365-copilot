@@ -11,14 +11,14 @@
     "chat"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/yourusername/n8n-nodes-microsoft365-copilot",
+  "homepage": "https://github.com/vagedis74/n8n-nodes-microsoft365-copilot",
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "Wouter",
+    "email": "wouter@example.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/n8n-nodes-microsoft365-copilot.git"
+    "url": "git+https://github.com/vagedis74/n8n-nodes-microsoft365-copilot.git"
   },
   "engines": {
     "node": ">=22.0.0"
