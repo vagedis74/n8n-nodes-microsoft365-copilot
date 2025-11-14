@@ -185,14 +185,17 @@ export class Microsoft365Copilot implements INodeType {
 								url: 'https://graph.microsoft.com/beta/copilot/conversations',
 								headers: {
 									'Content-Type': 'application/json',
+									'Content-Length': '2',
 								},
-								body: {},
-								json: true,
+								body: '{}',
+								json: false,
 							},
-						);
+						) as any;
+
+						const parsedResponse = typeof response === 'string' ? JSON.parse(response) : response;
 
 						returnData.push({
-							json: response as any,
+							json: parsedResponse,
 							pairedItem: { item: i },
 						});
 					}

@@ -9,7 +9,9 @@
       "Bash(export NVM_DIR=\"$HOME/.nvm\")",
       "Bash([ -s \"$NVM_DIR/nvm.sh\" ])",
       "Bash(. \"$NVM_DIR/nvm.sh\")",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(python3:*)",
+      "Bash(N8N_CUSTOM_EXTENSIONS=/home/wouter/myproject npm run dev:*)"
     ],
     "deny": [],
     "ask": []
