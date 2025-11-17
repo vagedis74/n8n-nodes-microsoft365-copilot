@@ -19,15 +19,6 @@ export class Microsoft365CopilotOAuth2Api implements ICredentialType {
 			placeholder: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
 		},
 		{
-			displayName: 'OAuth Redirect URL',
-			name: 'oauthTokenUrl',
-			type: 'string',
-			default: '',
-			description:
-				'The OAuth callback URL to use. Leave empty to use the default n8n OAuth callback URL. Only change this if you are using a custom domain or reverse proxy.',
-			placeholder: 'https://your-n8n-instance.com/rest/oauth2-credential/callback',
-		},
-		{
 			displayName: 'Grant Type',
 			name: 'grantType',
 			type: 'hidden',
