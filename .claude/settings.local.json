@@ -11,7 +11,19 @@
       "Bash(. \"$NVM_DIR/nvm.sh\")",
       "Bash(npm run build:*)",
       "Bash(python3:*)",
-      "Bash(N8N_CUSTOM_EXTENSIONS=/home/wouter/myproject npm run dev:*)"
+      "Bash(N8N_CUSTOM_EXTENSIONS=/home/wouter/myproject npm run dev:*)",
+      "mcp__MCP_DOCKER__mcp-add",
+      "Bash(npm run lint)",
+      "Bash(npx eslint:*)",
+      "Bash(npx tsc:*)",
+      "Bash(if not exist \"dist\\icons\" mkdir \"dist\\icons\")",
+      "Bash(copy \"icons\\*\" \"dist\\icons\"\")",
+      "Bash(npm publish)",
+      "Bash(npm whoami:*)",
+      "Bash(npm version:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
     ],
     "deny": [],
     "ask": []

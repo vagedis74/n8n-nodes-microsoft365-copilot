@@ -17,12 +17,14 @@ npm run lint:fix     # Auto-fix linting issues
 npm run format       # Format with Prettier
 ```
 
+**Windows Note**: The `copy-icons` script uses Unix commands (`mkdir -p`, `cp`). On Windows, run in Git Bash or WSL, or manually copy `icons/` to `dist/icons/`.
+
 ## Architecture
 
 ### Credentials (`credentials/Microsoft365CopilotOAuth2Api.credentials.ts`)
 - Extends n8n's `oAuth2Api` credential type
 - Configures Microsoft Entra ID OAuth2 endpoints using tenant ID
-- Scopes: Sites.Read.All, Mail.Read, People.Read.All, OnlineMeetingTranscript.Read.All, Chat.Read, ChannelMessage.Read.All, ExternalItem.Read.All
+- Required Graph API scopes: Sites.Read.All, Mail.Read, People.Read.All, OnlineMeetingTranscript.Read.All, Chat.Read, ChannelMessage.Read.All, ExternalItem.Read.All
 
 ### Node (`nodes/Microsoft365Copilot/Microsoft365Copilot.node.ts`)
 - Implements `INodeType` interface from n8n-workflow

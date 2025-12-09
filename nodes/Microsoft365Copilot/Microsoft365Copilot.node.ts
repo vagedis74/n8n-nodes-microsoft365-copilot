@@ -221,6 +221,16 @@ export class Microsoft365Copilot implements INodeType {
 							);
 						}
 
+						// Validate conversationId format to prevent URL path injection
+						const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+						if (!uuidRegex.test(conversationId)) {
+							throw new NodeOperationError(
+								this.getNode(),
+								'Invalid Conversation ID format. Expected a valid UUID (e.g., 0d110e7e-2b7e-4270-a899-fd2af6fde333).',
+								{ itemIndex: i },
+							);
+						}
+
 						if (!message) {
 							throw new NodeOperationError(
 								this.getNode(),
